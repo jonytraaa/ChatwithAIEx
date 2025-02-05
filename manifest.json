@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "ChatWithAI AutoSender",
+    "version": "1.0",
+    "description": "Envía automáticamente prompts a ChatGPT, Gemini, Claude, DeepSeek y Grok.",
+    "permissions": ["activeTab", "scripting", "storage", "tabs"],
+    "host_permissions": [
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://chat.deepseek.com/*",
+        "https://x.com/i/grok*"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
